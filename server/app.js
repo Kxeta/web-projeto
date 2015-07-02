@@ -39,6 +39,13 @@ app.set('views', 'server/views');
 // configurar para servir os arquivos estáticos da pasta "client"
 app.use(express.static('client'));
 
-
 // abrir servidor
 app.listen(3000);
+
+
+//Rotas
+app.get('/',function (req, res) {
+    res.render('index','', function(err, html) {
+                                  res.send(html);
+                                });
+});
