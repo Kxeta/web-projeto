@@ -1,6 +1,6 @@
 
-var app     = express();
 var express = require("express");
+var app     = express();
 
 // Configuração com o banco de dados:
 var mysql    = require('mysql');
