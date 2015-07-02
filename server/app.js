@@ -40,7 +40,7 @@ app.set('views', 'server/views');
 app.use(express.static('client'));
 
 // abrir servidor
-app.listen(3000);
+app.listen(8080);
 
 
 //Rotas
