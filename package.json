@@ -1,0 +1,29 @@
+{
+  "name": "TP2",
+  "version": "1.0.0",
+  "description": "Trabalho Prático 2 - Uma agenda de tarefas a serem procrastinadas",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "express": "latest",
+    "express-session": "^1.11.3",
+    "hbs": "^3.1.0",
+    "mysql": "^2.7.0",
+    "passport": "^0.2.2",
+    "passport-facebook": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kxeta/web-projeto.git"
+  },
+  "author": "Phillipe Caixeta Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kxeta/web-projeto/issues"
+  },
+  "homepage": "https://github.com/Kxeta/web-projeto"
+}
