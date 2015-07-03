@@ -36,16 +36,15 @@ app.set('view engine', 'hbs');
 // define onde estão as views
 app.set('views', 'server/views');
 
-// configurar para servir os arquivos estáticos da pasta "client"
-app.use(express.static('client'));
-
-// abrir servidor
-app.listen(8080);
-
-
 //Rotas
 app.get('/',function (req, res) {
     res.render('index','', function(err, html) {
                                   res.send(html);
                                 });
 });
+
+// configurar para servir os arquivos estáticos da pasta "client"
+app.use(express.static('client'));
+
+// abrir servidor
+app.listen(3000);
