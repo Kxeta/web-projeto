@@ -38,13 +38,16 @@ app.set('views', 'server/views');
 
 //Rotas
 app.get('/',function (req, res) {
-    res.render('index','', function(err, html) {
-                                  res.send(html);
-                                });
+    res.render('index');
 });
 
 // configurar para servir os arquivos estáticos da pasta "client"
 app.use(express.static('client'));
 
+
+app.set('port', (process.env.PORT || 5000));
+
 // abrir servidor
-app.listen(3000);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
