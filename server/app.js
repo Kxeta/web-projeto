@@ -41,6 +41,10 @@ app.get('/',function (req, res) {
     res.render('index');
 });
 
+app.get('/register',function (req, res) {
+    res.render('register');
+});
+
 // configurar para servir os arquivos estáticos da pasta "client"
 app.use(express.static('client'));
 
