@@ -2,88 +2,74 @@ body {
   font-family: 'Abel', sans-serif;
 }
 
-#site {
-  background-color: #334;
-  box-shadow: 3px 0px 1px rgba(0,0,0,.3),
-             -3px 0px 1px rgba(0,0,0,.3);
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
 }
-
-.page-brand {
-  font-family: 'Sacramento', cursive;
-  color: white;
-  margin-right: 50px;
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
 }
-
-.page-brand a {
-  color: white;
+.form-signin .checkbox
+{
+    font-weight: normal;
 }
-
-.navbar-inverse {
-  background-color: transparent;
-  border-color: transparent;
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-#conteudo {
-  background-color: #bbc;
+.form-signin .form-control:focus
+{
+    z-index: 2;
 }
-
-.avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
-
-.player-card {
-  background-color: aliceblue;
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
-
-.player-card-link-container {
-  display: inline-block;
-  margin-top: -2em;
-  float: right;
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
-@media (min-width: 768px) {
-  .player-card .dl-horizontal dt,
-  .player-card-stacked .dl-horizontal dt {
-    width: 100px;
-  }
-
-  .player-card .dl-horizontal dd,
-  .player-card-stacked .dl-horizontal dd {
-    margin-left: 120px;
-  }
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
 }
-
-
-.player-card-stacked {
-  text-align: center;
-  background-color: aliceblue;
-  box-shadow: 2px 2px 1px rgba(0,0,0,.3);
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
-
-.player-card-stacked .media-body {
-  display: inline;
-}
-
-.player-card-stacked .media-body dd {
-  text-align: left;
-}
-
-.game-detailed-card.media {
-  background-color: lavender;
-  box-shadow: 2px 2px 1px rgba(0,0,0,.3);
-}
-
-.game-card {
-  background-color: white;
-  box-shadow: 2px 2px 1px rgba(0,0,0,.3);
-}
-
-.game-card:nth-child(2n) {
-  background-color: whitesmoke;
-}
-
-.most-5played-title {
-  color: white;
+.new-account
+{
+    display: block;
+    margin-top: 10px;
 }
