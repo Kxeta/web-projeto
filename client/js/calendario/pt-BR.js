@@ -2,10 +2,10 @@ if(!window.calendar_languages) {
 	window.calendar_languages = {};
 }
 window.calendar_languages['pt-BR'] = {
-	error_noview:     'Calendar: View {0} not found',
-	error_dateformat: 'Calendar: Formato de data inválido {0}. Deve ser "now" ou "yyyy-mm-dd"',
-	error_loadurl:    'Calendar: URL de carregamento de eventos não está atribuida',
-	error_where:      'Calendar: Direção de navegação errada {0}. Só pode ser "next", "prev" ou "today"',
+	error_noview:     'Calendário: View {0} não encontrada',
+	error_dateformat: 'Calendário: Formato de data inválido {0}. Deve ser "now" ou "yyyy-mm-dd"',
+	error_loadurl:    'Calendário: URL de carregamento de eventos não está atribuida',
+	error_where:      'Calendário: Direção de navegação errada {0}. Só pode ser "next", "prev" ou "today"',
 	error_timedevide: 'Calendário: parâmetro para o separador de hora deve dividir 60 por um número inteiro. Por exemplo, 10, 15, 30',
 
 	title_year:  '{0}',
@@ -13,12 +13,12 @@ window.calendar_languages['pt-BR'] = {
 	title_week:  '{1} - Semana {0}',
 	title_day:   '{0}, {1} de {2} de {3}',
 
-	week:        'Week {0}',
+	week:        'Semana {0}',
 	all_day:     'Durante todo o dia',
 	time:        'Tempo',
 	events:      'Desenvolvimentos',
 	before_time: 'Tempo antes da fita final',
-	after_time:  'End depois de uma fita temporária',
+	after_time:  'Acaba depois de uma fita temporária',
 
 	m0:  'Janeiro',
 	m1:  'Fevereiro',
@@ -54,8 +54,8 @@ window.calendar_languages['pt-BR'] = {
 	d5: 'Sexta',
 	d6: 'Sábado',
 
-	easter:       'Easter',
-	easterMonday: 'Easter Monday',
+	easter:       'Páscoa',
+	easterMonday: 'Domingi de Páscoa',
 
 	first_day: 2,
 
