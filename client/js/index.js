@@ -3,7 +3,7 @@ $(document).ready(function () {
     login.submit(function( event ) {
         event.preventDefault();
         $.ajax({
-          type: "POST",
+          type: "GET",
           url: "/app"
         });
     });
