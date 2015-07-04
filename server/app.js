@@ -45,6 +45,9 @@ app.get('/register',function (req, res) {
     res.render('register');
 });
 
+app.get('/app',function (req, res) {
+    res.render('calendario');
+});
 
 
 // configurar para servir os arquivos estáticos da pasta "client"
