@@ -4,13 +4,14 @@
   "description": "Trabalho Prático 2 - Uma agenda de tarefas a serem procrastinadas",
   "main": "app.js",
   "dependencies": {
-    "angular": "^1.4.1",
+    "bootstrap": "^3.3.5",
     "express": "latest",
     "express-session": "^1.11.3",
-    "hbs": "^3.1.0",
+    "jquery": "^2.1.4",
     "mysql": "^2.7.0",
     "passport": "^0.2.2",
-    "passport-facebook": "^2.0.0"
+    "passport-facebook": "^2.0.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {},
   "scripts": {

@@ -31,7 +31,7 @@ function handle_database(req,res) {
 
 
 // configurar qual templating engine usar.
-app.set('view engine', 'hbs');
+app.set('view engine', 'underscore');
 
 // define onde estão as views
 app.set('views', 'server/views');
@@ -43,6 +43,10 @@ app.get('/',function (req, res) {
 
 app.get('/register',function (req, res) {
     res.render('register');
+});
+
+app.get('/app',function (req, res) {
+    res.render('calendario');
 });
 
 // configurar para servir os arquivos estáticos da pasta "client"
