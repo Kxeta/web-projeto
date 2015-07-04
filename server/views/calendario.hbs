@@ -8,28 +8,44 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/principal.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/plugin/bootstrap-calendar/css/calendar.css"
+    <link rel="stylesheet" href="/css/calendario/calendar.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <article class="aplicativo">
-        <div class="container">
-            <div class="col-sm-12 col-md-10 col-md-offset-1 conteudo">
-                <h1 class="text-center login-title">Procrast Nation</h1>
-                <div class="" id="calendar">                    
-                    
-                </div>
+<div class="container">
+	<div class="page-header">
+		<div class="pull-right form-inline">
+			<div class="btn-group">
+				<button class="btn btn-primary" data-calendar-nav="prev"><< Anterior</button>
+				<button class="btn" data-calendar-nav="today">Hoje</button>
+				<button class="btn btn-primary" data-calendar-nav="next">Próximo >></button>
+			</div>
+			<div class="btn-group btn-group-views">
+				<button class="btn btn-warning" data-calendar-view="year">Ano</button>
+				<button class="btn btn-warning" data-calendar-view="month">Mês</button>
+				<button class="btn btn-warning" data-calendar-view="week">Semana</button>
+				<button class="btn btn-warning" data-calendar-view="day">Dia</button>
+			</div>
+		</div>
+		<h3></h3>
+	</div>
+
+        <div class="row">
+            <div class="span9">
+                <div id="calendar"></div>
             </div>
-        </div>
-    </article>    
-    
-    
-    
-	<script type="text/javascript" src="/plugin/bootstrap-calendar/components/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="/plugin/bootstrap-calendar/components/underscore/underscore-min.js"></script>
-	<script type="text/javascript" src="/plugin/bootstrap-calendar/js/language/pt-BR.js"></script>
-    <script type="text/javascript" src="/plugin/bootstrap-calendar/js/calendar.min.js"></script>
-	<script type="text/javascript" src="/plugin/bootstrap-calendar/js/app.js"></script>
+            <h4>Events</h4>
+            <small>This list is populated with events dynamically</small>
+            <ul id="eventlist" class="nav nav-list"></ul>
+            </div>
+	</div>
+
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/underscore-min.js"></script>
+	<script type="text/javascript" src="/js/calendario/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/calendario/pt-BR.js"></script>    
+    <script type="text/javascript" src="/js/calendario/calendar.min.js"></script>
+	<script type="text/javascript" src="/js/calendario.js"></script>
 </body>
 </html>

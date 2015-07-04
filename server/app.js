@@ -54,7 +54,7 @@ app.get('/app',function (req, res) {
 app.use(express.static('client'));
 
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 3000));
 
 // abrir servidor
 app.listen(app.get('port'), function() {
