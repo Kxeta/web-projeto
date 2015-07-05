@@ -48,4 +48,36 @@
         $('.btn-group button').removeClass('active');
         $('.btn-group-views button[data-calendar-view="' + view + '"]').addClass('active');
 	});
+    
+    $('button#addTarefa').on('click', function(event){
+        event.preventDefault();
+        $.ajax({
+            url: '../app', 
+            type: 'POST',
+            data: $('#form-add-tarefa').serialize(),
+            success: function(data){
+                 $('#form-add-tarefa').children('input').val('');
+                 $('#form-add-tarefa').children('textarea').val('');
+                alert("Tarefa Adicionada com Sucesso!");
+//                var calendar = $('#calendar').calendar({events_source: function(){
+//    return  [
+//       {
+//           "id": 293,
+//           "title": "Event 1",
+//           "url": "http://example.com",
+//           "class": "event-important",
+//           "start": 12039485678000, // Milliseconds
+//           "end": 1234576967000 // Milliseconds
+//       },
+//       ...
+//   ];
+//}});
+                
+            },
+            error: function(data){
+                alert("Erro ao adicionar a tarefa");
+            }
+        });
+    });
 }(jQuery));
+

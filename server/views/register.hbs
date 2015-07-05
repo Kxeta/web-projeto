@@ -1,33 +1,34 @@
 <!doctype html>
 <html lang="pt">
-<head>
-    <meta charset="utf-8">
-    <title>Procrast Nation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel|Sacramento">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/principal.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <article class="formularios">
-        <div class="container">
-            <div class="col-sm-8 col-md-8 col-md-offset-2 conteudo">
-                <h1 class="text-center login-title">Procrast Nation</h1>
-                <div class="account-wall">      
-                    <img src="images/LazyKing_Calendar.png" class="img-responsive" alt="Procrast Nation"/>              
-                    <form class="form-signin">
-                    <input id="rg-nome" type="text" class="form-control" placeholder="Nome" required autofocus>
-                    <input id="rg-sobrenome" type="text" class="form-control" placeholder="Sobrenome" required>
-                    <input id="rg-email" type="text" class="form-control" placeholder="E-mail" required>
-                    <input id="rg-senha" type="password" class="form-control" placeholder="Senha" required>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">
-                        Enviar</button>
-                    </form>
+    <head>
+        <meta charset="utf-8">
+        <title>Procrast Nation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel|Sacramento">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/principal.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <article class="formularios">
+            <div class="container">
+                <div class="col-sm-8 col-md-8 col-md-offset-2 conteudo">
+                    <h1 class="text-center login-title">Procrast Nation</h1>
+                    <div class="account-wall">      
+                        <img src="images/LazyKing_Calendar.png" class="img-responsive" alt="Procrast Nation"/>              
+                        <form class="form-signin" method="POST">
+                        <input id="rg-nome" type="text" name="nome" class="form-control" placeholder="Nome" required autofocus>
+                        <input id="rg-sobrenome" type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" required>
+                        <input id="rg-email" type="text" name="email" class="form-control" placeholder="E-mail" required>
+                        <input id="rg-senha" type="password" name="password" class="form-control" placeholder="Senha" required>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">
+                            Enviar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </article>
-</body>
+        </article>
+        <script type="text/javascript" src="/js/register.js"></script>
+    </body>
 </html>
